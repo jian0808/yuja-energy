@@ -1,0 +1,102 @@
+@charset "utf-8";
+
+@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+
+/* html{font-size: 62.5%;} */
+
+.inner{padding: 0 10px;}
+.tit {margin-bottom: 15px; font-size: 1.188rem; line-height: 1; font-weight: 600; text-align: center;}
+.sub-txt {margin-bottom: 20px; font-size: 0.813rem; line-height: 1.5; color: #777; text-align: center;}
+
+/* header */
+.header{position: fixed; top: 0; left: 0; z-index: 9999; width: 100%; display: flex; justify-content: space-between; align-items: center; background-color: #fff;}
+.header .logo-wrap{padding-left: 15px; }
+.header .logo-wrap > a > img{width: 45px;}
+.header .menu-wrap .btn-menu{position: relative; padding: 17px 16px 15px 17px;}
+.header .menu-wrap .btn-menu::before{content: ""; position: absolute; top: 0; left: 0; width: 1px; height: 100%; background-color: #ddd;}
+.header .menu-wrap .btn-menu > img {width: 22px;}
+
+/* main */
+.main .inner {padding: 0 15px;}
+/* main slide */
+.main-visual{margin-bottom: 30px; padding-top: 56px;}
+.main-visual .swiper {width: 100%; height: 100%;}
+.main-visual .swiper-slide {text-align: center;  font-size: 0.9rem; background-color: #ddd; display: flex; justify-content: center; align-items: center;}
+.main-visual .swiper-slide .slide-content{width: 100%; height: 0; /*padding: 76px 76px 85px;*/ padding: 10vw 10vw; padding-bottom: calc(370 / 640 * 100%); background-repeat: no-repeat; background-size: cover; background-position: center; color: #fff;}
+.main-visual .swiper-slide .slide-content .txt-box{/*padding: 55px 55px 50px;*/ padding: 8vw 7vw; border: 3px solid #fff;}
+.main-visual .swiper-slide .slide-content.slide-bg01{background-image: url(../img/img_slider_01.jpg);}
+.main-visual .swiper-slide .slide-content.slide-bg02{background-image: url(../img/img_slider_01.jpg);}
+.main-visual .swiper-slide .slide-content.slide-bg03{background-image: url(../img/img_slider_01.jpg);}
+.main-visual .swiper-slide .slide-content .slide-tit{position: relative; margin-bottom: 32px; font-size: 1.5rem; font-weight: 600; line-height: 1;}
+.main-visual .swiper-slide .slide-content .slide-tit::after{content: ""; position: absolute; bottom: -20px; left: 50%; margin-left: -11px; width: 21px; height: 1px; background-color: #fff;}
+.main-visual .swiper-slide .slide-content .slide-txt{font-size: 0.813rem; font-weight: 400; line-height: 1.5;}
+.main-slide .swiper-pagination-bullet {width: 8px; height: 8px; background: #7085a9; opacity: 1;}
+.main-slide .swiper-pagination-bullet-active{background-color: #fff;}
+.main-slide .swiper-horizontal>.swiper-pagination-bullets,
+.main-slide .swiper-pagination-bullets.swiper-pagination-horizontal{bottom: 15px;}
+.main-slide .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.main-slide .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{margin: 0 8px;}
+
+.main .tit{margin-bottom: 20px;}
+.main-text{margin-bottom: 60px;}
+.main-text .sub-txt{margin-bottom: 20px;}
+.main-text .bg-wrap{width: 100%; height: 0; padding-bottom: calc(270 / 581 * 100%); background-repeat: no-repeat; background-size: cover; background-position: center; background-image: url(../img/banner_01.jpg);}
+
+/* notice */
+.main.notice{margin-bottom: 60px;}
+.main.notice .tit-wrap{position: relative;}
+.main.notice .more-view{position: absolute; top: 4px; right: 0; padding-right: 12px; font-size: 0.750rem; }
+.main.notice .more-view::after{content: ""; position: absolute; top: 4px; right: 0; width: 4px; height: 7px; background: url(../img/ico_arrows_black.png) no-repeat;}
+.main.notice .noti-content .noti-list{border: 1px solid #ddd; margin-top: -1px;}
+.main.notice .noti-content .noti-list a{display: block; padding: 15px 10px; }
+.main.notice .noti-content .noti-list .noti-tit{font-size: 0.875rem; color: #666; margin-bottom: 5px;}
+.main.notice .noti-content .noti-list .date{font-size: 0.813rem; color: #999;}
+
+/* map */
+.main.map{margin-bottom: 60px;}
+.map .map-wrap .roadmap{position: relative; display: block; overflow: hidden; padding-bottom: calc(310 / 580 * 100%);}
+.map .map-wrap .roadmap img{position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;}
+
+/* footer */
+.footer{font-family: "nanumsquare","맑은 고딕","Malgun Gothic",sans-serif;}
+.footer .footer-top{display: flex; align-items: center; margin-bottom: 16px; padding: 12px 13px; border-width: 1px; border-style: solid; border-color: #ddd transparent #ddd transparent;}
+.footer .footer-top .tel{color:#666; font-size: 0.750rem; font-weight: 600;}
+.footer .footer-top .tel-number{font-size: 1.313rem; color:#24395c; font-weight: 800; margin-left: 23px;}
+.footer .footer-mid{margin-bottom: 15px;}
+.footer .footer-mid ul{display: flex; justify-content: space-evenly;}
+.footer .footer-mid ul li a{color: #666; font-size: 0.750rem; font-weight: 600;}
+.footer .footer-btm{padding-bottom: 15px; font-size: 0.750rem; color: #999; text-align: center; line-height: 1.4;}
+.footer .footer-btm address a{color: #999;}
+.footer .footer-btm span:first-child{margin-right: 10px;}
+
+/* top button */
+.btn-top{position: fixed; right: 5px; bottom: 140px; z-index: 9999; display: none; width: 31px; height: 31px; padding-top: 13px; text-align: center; background-color: #24395c; font-size: 0.750rem; color: #fff;}
+.btn-top::before{content: ""; position: absolute; top: 8px; left: 50%; margin-left: -6px; width: 12px; height: 3px; background: url(../img/ico_arrows_white.png) no-repeat;}
+
+/* sub page */
+.sub-title{padding-top: 57px; margin-bottom: 25px; background-color: #24395c;}
+.sub-title ul{display: flex; justify-content: space-evenly;}
+.sub-title .title-list{width: 25%;}
+.sub-title .title-list.active > a{background-color: #23519f;}
+.sub-title .title-list > a{width: 100%; display: inline-block; padding: 13px 0; text-align: center; color: #fff;}
+
+/* 오시는길 */
+.map{margin-bottom: 25px;}
+.map .adress{padding: 20px 10px; border: 1px solid #ddd;}
+.map .adress > h4{margin-bottom: 12px; font-size: 1.063rem; font-weight: 600;}
+.map .adress > p{font-size: 0.938rem; color: #666;}
+
+/* 인사말 */
+.greetings{margin-bottom: 25px;}
+.greetings .img-wrap{margin-bottom: 25px;}
+.greetings .img-wrap > img{width: 100%;}
+.greetings .txt-wrap > h4{margin-bottom: 20px; font-size: 1.250rem; font-weight: 400; color: #222; line-height: 1.4;}
+.greetings .txt-wrap > p{font-size: 1rem; color: #666; line-height: 1.6;}
+
+/* @media (min-width: 640px){
+
+} */
+@media (min-width: 375px){
+
+}
