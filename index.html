@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- swiper css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <!-- jquery-latest -->
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
 </head>
 <body>
     <!-- header -->
@@ -22,90 +24,99 @@
             <a href="javascript:void(0);" class="btn-menu">
                 <img src="img/btn_menu.png" alt="메뉴열기">
             </a>
+            <ul class="mo-menu">
+                <li class="list"><a href="greetings.html">인사말</a></li>
+                <li class="list"><a href="history.html">연혁</a></li>
+                <li class="list active"><a href="awards.html">수상실적</a></li>
+                <li class="list"><a href="roadmap.html">오시는 길</a></li>
+                <div class="close"></div>
+            </ul>
         </div>
     </header>
     <!-- //header -->
-    <!-- main slide-->
-    <section class="main-visual">
-        <!-- Swiper -->
-        <div class="swiper main-slide">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="slide-content slide-bg01">
-                        <div class="txt-box">
-                            <h2 class="slide-tit">더 나은 세상을 위한 노력</h2>
-                            <p class="slide-txt">혁신적인 생각을 가진 인재들이 모여<br>더 좋은 세상을 위해 노력합니다.</p>
-                        </div>
-                    </div>                    
+    <main class="main">
+        <!-- main slide-->
+        <section class="main-visual">
+            <!-- Swiper -->
+            <div class="swiper main-slide">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="slide-content slide-bg01">
+                            <div class="txt-box">
+                                <h2 class="slide-tit">더 나은 세상을 위한 노력</h2>
+                                <p class="slide-txt">혁신적인 생각을 가진 인재들이 모여<br>더 좋은 세상을 위해 노력합니다.</p>
+                            </div>
+                        </div>                    
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide-content slide-bg02">
+                            <div class="txt-box">
+                                <h2 class="slide-tit">메인 타이틀2</h2>
+                                <p class="slide-txt">서브 텍스트가 들어가는<br>부분 입니다2</p>
+                            </div>                        
+                        </div>  
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide-content slide-bg03">
+                            <div class="txt-box">
+                                <h2 class="slide-tit">메인 타이틀3</h2>
+                                <p class="slide-txt">서브 텍스트가 들어가는<br>부분 입니다3</p>
+                            </div>
+                        </div> 
+                    </div>
                 </div>
-                <div class="swiper-slide">
-                    <div class="slide-content slide-bg02">
-                        <div class="txt-box">
-                            <h2 class="slide-tit">메인 타이틀2</h2>
-                            <p class="slide-txt">서브 텍스트가 들어가는<br>부분 입니다2</p>
-                        </div>                        
-                    </div>  
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        <!-- //main slide -->
+        <!-- 친환경 에너지 전문 기업 -->
+        <section class="contents main-text">
+            <div class="inner">
+                <h3>친환경 에너지 전문 기업</h3>
+                <p class="text-box">
+                    친환경 에너지 사업의 리더로서 앞으로도 미래를 바라보며 혁신을 꿈꾸는 기업이 되도록 최선을 다하겠습니다.
+                </p>
+                <div class="bg-wrap"></div>
+            </div>
+        </section>
+        <!-- //친환경 에너지 전문 기업 -->
+        <!-- 공지사항 -->
+        <section class="contents notice">
+            <div class="inner">
+                <div class="tit-wrap">
+                    <h3>공지사항</h3>
+                    <a href="javascript:voic(0)" class="more-view">더보기</a>
                 </div>
-                <div class="swiper-slide">
-                    <div class="slide-content slide-bg03">
-                        <div class="txt-box">
-                            <h2 class="slide-tit">메인 타이틀3</h2>
-                            <p class="slide-txt">서브 텍스트가 들어가는<br>부분 입니다3</p>
-                        </div>
-                    </div> 
+                <ul class="noti-content">
+                    <li class="noti-list">
+                        <a href="javascript:voic(0)">
+                            <h4 class="noti-tit">신제품 출시 기념 이벤트를 진행합니다.</h4>
+                            <span class="date">2017-06-22</span>
+                        </a>                    
+                    </li>
+                    <li class="noti-list">
+                        <a href="javascript:voic(0)">
+                            <h4 class="noti-tit">대량구매 담당자 전화번호를 안내해드립니다.</h4>
+                            <span class="date">2017-06-22</span>
+                        </a>                    
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- //공지사항 -->
+        <!-- 오시는 길 -->
+        <section class="contents map">
+            <div class="inner">
+                <h3>찾아오시는 길</h3>
+                <div class="map-wrap">
+                    <a href="javascript:void(0)" class="roadmap">
+                        <img src="img/road_map.jpg" alt="지도">
+                    </a>
                 </div>
             </div>
-            <div class="swiper-pagination"></div>
-        </div>
-    </section>
-    <!-- //main slide -->
-    <!-- 친환경 에너지 전문 기업 -->
-    <section class="main main-text">
-        <div class="inner">
-            <h3 class="tit">친환경 에너지 전문 기업</h3>
-            <p class="sub-txt">
-                친환경 에너지 사업의 리더로서 앞으로도 미래를 바라보며 혁신을 꿈꾸는 기업이 되도록 최선을 다하겠습니다.
-            </p>
-            <div class="bg-wrap"></div>
-        </div>
-    </section>
-    <!-- //친환경 에너지 전문 기업 -->
-    <!-- 공지사항 -->
-    <section class="main notice">
-        <div class="inner">
-            <div class="tit-wrap">
-                <h3 class="tit">공지사항</h3>
-                <a href="javascript:voic(0)" class="more-view">더보기</a>
-            </div>
-            <ul class="noti-content">
-                <li class="noti-list">
-                    <a href="javascript:voic(0)">
-                        <h4 class="noti-tit">신제품 출시 기념 이벤트를 진행합니다.</h4>
-                        <span class="date">2017-06-22</span>
-                    </a>                    
-                </li>
-                <li class="noti-list">
-                    <a href="javascript:voic(0)">
-                        <h4 class="noti-tit">대량구매 담당자 전화번호를 안내해드립니다.</h4>
-                        <span class="date">2017-06-22</span>
-                    </a>                    
-                </li>
-            </ul>
-        </div>
-    </section>
-    <!-- //공지사항 -->
-    <!-- 오시는 길 -->
-    <section class="main map">
-        <div class="inner">
-            <h3 class="tit">찾아오시는 길</h3>
-            <div class="map-wrap">
-                <a href="javascript:void(0)" class="roadmap">
-                    <img src="img/road_map.jpg" alt="지도">
-                </a>
-            </div>
-        </div>
-    </section>
-    <!-- //오시는 길 -->
+        </section>
+        <!-- //오시는 길 -->
+    </main>    
     <!-- footer -->
     <footer class="footer">
         <div class="footer-top">
@@ -132,10 +143,8 @@
     <!-- //footer -->
     <a href="#" class="btn-top">TOP</a>
     
-    <!-- JQuery 3.6.3 -->
-    <script src="js/jquery-3.6.3.min.js"></script>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/contents.js"></script>
 </body>
 </html>

@@ -29,3 +29,27 @@ $(function() { // 보이기 | 숨기기
         return false; 
     }); 
 });
+
+// tab
+$(document).ready(function(){    
+    $('ul.tabs li').click(function(){
+        var tab_id = $(this).attr('data-tab');
+
+        $('ul.tabs li').removeClass('current');
+        $('.tab-content').removeClass('current');
+
+        $(this).addClass('current');
+        $("#"+tab_id).addClass('current');
+    })
+})
+
+// mo-menu
+$(document).ready(function(){    
+    $('.btn-menu').click(function(){
+        $('.mo-menu').fadeIn();
+    })
+    $('.close').click(function(){
+        $('.mo-menu').fadeOut();
+    })
+})
+

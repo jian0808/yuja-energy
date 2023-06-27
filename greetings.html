@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>인사말</title>
-    <link rel="stylesheet" href="/css/common.css">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- jquery-latest -->
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
 </head>
 <body>
     <!-- header -->
@@ -19,44 +21,53 @@
             <a href="javascript:void(0);" class="btn-menu">
                 <img src="img/btn_menu.png" alt="메뉴열기">
             </a>
+            <ul class="mo-menu">
+                <li class="list"><a href="greetings.html">인사말</a></li>
+                <li class="list"><a href="history.html">연혁</a></li>
+                <li class="list active"><a href="awards.html">수상실적</a></li>
+                <li class="list"><a href="roadmap.html">오시는 길</a></li>
+                <div class="close"></div>
+            </ul>
         </div>
     </header>
     <!-- //header -->
-    <section class="sub-title">
-        <ul>
-            <li class="title-list active"><a href="javascript:void(0)">인사말</a></li>
-            <li class="title-list"><a href="javascript:void(0)">연혁</a></li>
-            <li class="title-list"><a href="javascript:void(0)">수상실적</a></li>
-            <li class="title-list"><a href="javascript:void(0)">오시는 길</a></li>
-        </ul>
-    </section>
-    <!-- 인사말 -->
-    <section class="greetings">
-        <div class="inner">
-            <h3 class="tit">인사말</h3>
-            <p class="sub-txt">
-                유자에너지 홈페이지를 방문해주셔서 감사합니다.
-            </p>      
-            <div class="img-wrap">
-                <img src="img/picture01.png" alt="사진">
+    <div class="container">
+        <section class="sub-menu">
+            <ul>
+                <li class="menu-list active"><a href="greetings.html">인사말</a></li>
+                <li class="menu-list"><a href="history.html">연혁</a></li>
+                <li class="menu-list"><a href="awards.html">수상실적</a></li>
+                <li class="menu-list"><a href="roadmap.html">오시는 길</a></li>
+            </ul>
+        </section>
+        <!-- 인사말 -->
+        <section class="contents greetings">
+            <div class="inner">
+                <h3>인사말</h3>
+                <p class="text-box">
+                    유자에너지 홈페이지를 방문해주셔서 감사합니다.
+                </p>      
+                <div class="img-wrap">
+                    <img src="img/picture01.png" alt="사진">
+                </div>
+                <div class="txt-wrap">
+                    <h4>유자에너지는 친환경 에너지 사업의<br>
+                        선두주자로서<br>
+                        묵묵히 한길만을 걸어왔습니다.
+                    </h4>
+                    <p>
+                        미래세대에게 아름다운 자연을 물려주기 위해<br>
+                        눈앞의 이익보다는 미래를 바라보며 친환경 에너지를<br>
+                        개발하는데 정진해왔습니다.<br><br>
+                        친환경 에너지 사업의 리더로서 앞으로도 미래를 바라보며<br>
+                        혁신을 꿈꾸는 기업이 되도록 최선을 다하겠습니다.<br><br>
+                        감사합니다.
+                    </p>
+                </div>
             </div>
-            <div class="txt-wrap">
-                <h4>유자에너지는 친환경 에너지 사업의<br>
-                    선두주자로서<br>
-                    묵묵히 한길만을 걸어왔습니다.
-                </h4>
-                <p>
-                    미래세대에게 아름다운 자연을 물려주기 위해<br>
-                    눈앞의 이익보다는 미래를 바라보며 친환경 에너지를<br>
-                    개발하는데 정진해왔습니다.<br><br>
-                    친환경 에너지 사업의 리더로서 앞으로도 미래를 바라보며<br>
-                    혁신을 꿈꾸는 기업이 되도록 최선을 다하겠습니다.<br><br>
-                    감사합니다.
-                </p>
-            </div>
-        </div>
-    </section>
-    <!-- //인사말 -->
+        </section>
+        <!-- //인사말 -->
+    </div>
     <!-- footer -->
     <footer class="footer">
         <div class="footer-top">
@@ -82,5 +93,9 @@
     </footer>
     <!-- //footer -->
     <a href="#" class="btn-top">TOP</a>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/contents.js"></script>
 </body>
 </html>

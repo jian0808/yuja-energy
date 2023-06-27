@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>수상실적</title>
-    <link rel="stylesheet" href="/css/common.css">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- jquery-latest -->
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
 </head>
 <body>
     <!-- header -->
@@ -19,27 +21,95 @@
             <a href="javascript:void(0);" class="btn-menu">
                 <img src="img/btn_menu.png" alt="메뉴열기">
             </a>
+            <ul class="mo-menu">
+                <li class="list"><a href="greetings.html">인사말</a></li>
+                <li class="list"><a href="history.html">연혁</a></li>
+                <li class="list active"><a href="awards.html">수상실적</a></li>
+                <li class="list"><a href="roadmap.html">오시는 길</a></li>
+                <div class="close"></div>
+            </ul>
         </div>
     </header>
     <!-- //header -->
-    <section class="sub-title">
-        <ul>
-            <li class="title-list"><a href="javascript:void(0)">인사말</a></li>
-            <li class="title-list"><a href="javascript:void(0)">연혁</a></li>
-            <li class="title-list active"><a href="javascript:void(0)">수상실적</a></li>
-            <li class="title-list"><a href="javascript:void(0)">오시는 길</a></li>
-        </ul>
-    </section>
-    <!-- 수상실적 -->
-    <section class="awards">
-        <div class="inner">
-            <h3 class="tit">수상실적</h3>
-            <p class="sub-txt">
-                유자에너지의 수상 실적을 보여드립니다.
-            </p>      
-        </div>
-    </section>
-    <!-- //수상실적 -->
+    <div class="container">
+        <section class="sub-menu">
+            <ul>
+                <li class="menu-list"><a href="greetings.html">인사말</a></li>
+                <li class="menu-list"><a href="history.html">연혁</a></li>
+                <li class="menu-list active"><a href="awards.html">수상실적</a></li>
+                <li class="menu-list"><a href="roadmap.html">오시는 길</a></li>
+            </ul>
+        </section>
+        <!-- 수상실적 -->
+        <section class="contents awards">
+            <div class="inner">
+                <h3>수상실적</h3>
+                <p class="text-box">
+                    유자에너지의 수상 실적을 보여드립니다.
+                </p>  
+                <div class="list-wrap">
+                    <div class="row">
+                        <div class="column half">
+                            <a href="javascript:void(0)" class="img-wrap">
+                                <img src="img/awards_01.jpg" alt="2017 수상실적1">
+                            </a>                            
+                            <a href="javascript:void(0)" class="awards-tit">2017 수상실적1</a>
+                        </div>
+                        <div class="column half">
+                            <a href="javascript:void(0)" class="img-wrap">
+                                <img src="img/awards_02.jpg" alt="2017 수상실적1">
+                            </a>                            
+                            <a href="javascript:void(0)" class="awards-tit">2017 수상실적2</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="column half">
+                            <a href="javascript:void(0)" class="img-wrap">
+                                <img src="img/awards_03.jpg" alt="2017 수상실적1">
+                            </a>                            
+                            <a href="javascript:void(0)" class="awards-tit">2017 수상실적3</a>
+                        </div>
+                        <div class="column half">
+                            <a href="javascript:void(0)" class="img-wrap">
+                                <img src="img/awards_04.jpg" alt="2017 수상실적1">
+                            </a>                            
+                            <a href="javascript:void(0)" class="awards-tit">2017 수상실적4</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- paging -->
+                <div class="center">
+                    <div class="paging">
+                        <button class="btn-paging" data-type="first">first</button>
+                        <button class="btn-paging" data-type="prev">prev</button>
+                        <div class="page-numbering">
+                            <a href="" class="num on">1</a>
+                            <a href="" class="num">2</a>
+                            <a href="" class="num">3</a>
+                            <a href="" class="num">4</a>
+                            <a href="" class="num">5</a>
+                        </div>
+                        <button class="btn-paging" data-type="next">next</button>
+                        <button class="btn-paging" data-type="last">last</button>
+                    </div>
+                </div>                
+                <!-- //paging -->
+                <div class="search-container">
+                    <div class="selectbox">
+                        <select name="" id="">
+                            <option value="">제목</option>
+                            <option value="">내용</option>
+                        </select>
+                    </div>
+                    <div class="search-box">
+                        <input type="text" placeholder="" name="search">
+                        <button class="btn-search"></button>
+                    </div>
+                </div>                
+            </div>   
+        </section>
+        <!-- //수상실적 -->        
+    </div>
     <!-- footer -->
     <footer class="footer">
         <div class="footer-top">
@@ -65,5 +135,19 @@
     </footer>
     <!-- //footer -->
     <a href="#" class="btn-top">TOP</a>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/contents.js"></script>
+    <!-- <script>
+        $(document).ready(function(){    
+            $('.btn-menu').click(function(){
+                $('.mo-menu').fadeIn();
+            })
+            $('.close').click(function(){
+                $('.mo-menu').fadeOut();
+            })
+        })
+    </script> -->
 </body>
 </html>

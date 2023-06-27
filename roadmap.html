@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>오시는길</title>
-    <link rel="stylesheet" href="/css/common.css">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- jquery-latest -->
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
 </head>
 <body>
     <!-- header -->
@@ -19,36 +21,45 @@
             <a href="javascript:void(0);" class="btn-menu">
                 <img src="img/btn_menu.png" alt="메뉴열기">
             </a>
+            <ul class="mo-menu">
+                <li class="list"><a href="greetings.html">인사말</a></li>
+                <li class="list"><a href="history.html">연혁</a></li>
+                <li class="list active"><a href="awards.html">수상실적</a></li>
+                <li class="list"><a href="roadmap.html">오시는 길</a></li>
+                <div class="close"></div>
+            </ul>
         </div>
     </header>
     <!-- //header -->
-    <section class="sub-title">
-        <ul>
-            <li class="title-list"><a href="javascript:void(0)">인사말</a></li>
-            <li class="title-list"><a href="javascript:void(0)">연혁</a></li>
-            <li class="title-list"><a href="javascript:void(0)">수상실적</a></li>
-            <li class="title-list active"><a href="javascript:void(0)">오시는 길</a></li>
-        </ul>
-    </section>
-    <!-- 오시는 길 -->
-    <section class="map">
-        <div class="inner">
-            <h3 class="tit">찾아오시는 길</h3>
-            <p class="sub-txt">
-                유자에너지에 오시는 길을 소개합니다.
-            </p>
-            <div class="map-wrap">
-                <a href="javascript:void(0)" class="roadmap">
-                    <img src="img/road_map.jpg" alt="지도">
-                </a>
+    <div class="container">
+        <section class="sub-menu">
+            <ul>
+                <li class="menu-list"><a href="greetings.html">인사말</a></li>
+                <li class="menu-list"><a href="history.html">연혁</a></li>
+                <li class="menu-list"><a href="awards.html">수상실적</a></li>
+                <li class="menu-list active"><a href="roadmap.html">오시는 길</a></li>
+            </ul>
+        </section>
+        <!-- 오시는 길 -->
+        <section class="contents map">
+            <div class="inner">
+                <h3>찾아오시는 길</h3>
+                <p class="text-box">
+                    유자에너지에 오시는 길을 소개합니다.
+                </p>
+                <div class="map-wrap">
+                    <a href="javascript:void(0)" class="roadmap">
+                        <img src="img/road_map.jpg" alt="지도">
+                    </a>
+                </div>
+                <div class="adress">
+                    <h4>유자에너지</h4>
+                    <p>서울시 강남구 역삼1동 123-456</p>
+                </div>            
             </div>
-            <div class="adress">
-                <h4>유자에너지</h4>
-                <p>서울시 강남구 역삼1동 123-456</p>
-            </div>            
-        </div>
-    </section>
-    <!-- //오시는 길 -->
+        </section>
+        <!-- //오시는 길 -->
+    </div>
     <!-- footer -->
     <footer class="footer">
         <div class="footer-top">
@@ -74,5 +85,9 @@
     </footer>
     <!-- //footer -->
     <a href="#" class="btn-top">TOP</a>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/contents.js"></script>
 </body>
 </html>

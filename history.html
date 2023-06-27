@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>연혁</title>
-    <link rel="stylesheet" href="/css/common.css">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- jquery-latest -->
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
 </head>
 <body>
     <!-- header -->
@@ -19,27 +21,280 @@
             <a href="javascript:void(0);" class="btn-menu">
                 <img src="img/btn_menu.png" alt="메뉴열기">
             </a>
+            <ul class="mo-menu">
+                <li class="list"><a href="greetings.html">인사말</a></li>
+                <li class="list"><a href="history.html">연혁</a></li>
+                <li class="list active"><a href="awards.html">수상실적</a></li>
+                <li class="list"><a href="roadmap.html">오시는 길</a></li>
+                <div class="close"></div>
+            </ul>
         </div>
     </header>
     <!-- //header -->
-    <section class="sub-title">
-        <ul>
-            <li class="title-list"><a href="javascript:void(0)">인사말</a></li>
-            <li class="title-list active"><a href="javascript:void(0)">연혁</a></li>
-            <li class="title-list"><a href="javascript:void(0)">수상실적</a></li>
-            <li class="title-list"><a href="javascript:void(0)">오시는 길</a></li>
-        </ul>
-    </section>
-    <!-- 연혁 -->
-    <section class="history">
-        <div class="inner">
-            <h3 class="tit">연혁</h3>
-            <p class="sub-txt">
-                유자에너지가 걸어온 길을 소개합니다.
-            </p>      
-        </div>
-    </section>
-    <!-- //연혁 -->
+    <div class="container">
+        <section class="sub-menu">
+            <ul>
+                <li class="menu-list"><a href="greetings.html">인사말</a></li>
+                <li class="menu-list active"><a href="history.html">연혁</a></li>
+                <li class="menu-list"><a href="awards.html">수상실적</a></li>
+                <li class="menu-list"><a href="roadmap.html">오시는 길</a></li>
+            </ul>
+        </section>
+        <!-- 연혁 -->
+        <section class="contents history">
+            <div class="inner">
+                <h3>연혁</h3>
+                <p class="text-box">
+                    유자에너지가 걸어온 길을 소개합니다.
+                </p> 
+                <div class="tab-box">
+                    <ul class="tabs">
+                        <li class="tab-link current" data-tab="tab-1">2010s</li>
+                        <li class="tab-link" data-tab="tab-2">2000s</li>
+                        <li class="tab-link" data-tab="tab-3">1990s</li>
+                    </ul>                
+                    <div id="tab-1" class="tab-content current">
+                        <ul class="year-wrap">
+                            <li>
+                                <div class="left">
+                                    <span class="year">2017</span>
+                                </div>
+                                <div class="right">
+                                    <div class="row">
+                                        <span class="month">05</span>
+                                        <span class="detail">사옥 이전</span>
+                                    </div>
+                                    <div class="row">
+                                        <span class="month">03</span>
+                                        <span class="detail">김ㅇㅇ사장 취임</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="left">
+                                    <span class="year">2016</span>
+                                </div>
+                                <div class="right">
+                                    <div class="row line">
+                                        <span class="month">05</span>
+                                        <span class="detail">사옥 이전</span>
+                                    </div>
+                                    <div class="row line">
+                                        <span class="month">03</span>
+                                        <span class="detail">김ㅇㅇ사장 취임</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="left">
+                                    <span class="year">2013</span>
+                                </div>
+                                <div class="right">
+                                    <div class="row line">
+                                        <span class="month">05</span>
+                                        <span class="detail">사옥 이전</span>
+                                    </div>
+                                    <div class="row line">
+                                        <span class="month">03</span>
+                                        <span class="detail">김ㅇㅇ사장 취임</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="left">
+                                    <span class="year">2012</span>
+                                </div>
+                                <div class="right">
+                                    <div class="row line">
+                                        <span class="month">05</span>
+                                        <span class="detail">사옥 이전</span>
+                                    </div>
+                                    <div class="row line">
+                                        <span class="month">03</span>
+                                        <span class="detail">김ㅇㅇ사장 취임</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="left">
+                                    <span class="year">2010</span>
+                                </div>
+                                <div class="right">
+                                    <div class="row line">
+                                        <span class="month">05</span>
+                                        <span class="detail">사옥 이전</span>
+                                    </div>
+                                    <div class="row line">
+                                        <span class="month">03</span>
+                                        <span class="detail">김ㅇㅇ사장 취임</span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>                
+                    <div id="tab-2" class="tab-content">
+                        <ul class="year-wrap">
+                            <li>
+                                <div class="left">
+                                    <span class="year">2007</span>
+                                </div>
+                                <div class="right">
+                                    <div class="row">
+                                        <span class="month">05</span>
+                                        <span class="detail">사옥 이전</span>
+                                    </div>
+                                    <div class="row">
+                                        <span class="month">03</span>
+                                        <span class="detail">김ㅇㅇ사장 취임</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="left">
+                                    <span class="year">2006</span>
+                                </div>
+                                <div class="right">
+                                    <div class="row line">
+                                        <span class="month">05</span>
+                                        <span class="detail">사옥 이전</span>
+                                    </div>
+                                    <div class="row line">
+                                        <span class="month">03</span>
+                                        <span class="detail">김ㅇㅇ사장 취임</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="left">
+                                    <span class="year">2003</span>
+                                </div>
+                                <div class="right">
+                                    <div class="row line">
+                                        <span class="month">05</span>
+                                        <span class="detail">사옥 이전</span>
+                                    </div>
+                                    <div class="row line">
+                                        <span class="month">03</span>
+                                        <span class="detail">김ㅇㅇ사장 취임</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="left">
+                                    <span class="year">2002</span>
+                                </div>
+                                <div class="right">
+                                    <div class="row line">
+                                        <span class="month">05</span>
+                                        <span class="detail">사옥 이전</span>
+                                    </div>
+                                    <div class="row line">
+                                        <span class="month">03</span>
+                                        <span class="detail">김ㅇㅇ사장 취임</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="left">
+                                    <span class="year">2001</span>
+                                </div>
+                                <div class="right">
+                                    <div class="row line">
+                                        <span class="month">05</span>
+                                        <span class="detail">사옥 이전</span>
+                                    </div>
+                                    <div class="row line">
+                                        <span class="month">03</span>
+                                        <span class="detail">김ㅇㅇ사장 취임</span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>                
+                    <div id="tab-3" class="tab-content">
+                        <ul class="year-wrap">
+                            <li>
+                                <div class="left">
+                                    <span class="year">1997</span>
+                                </div>
+                                <div class="right">
+                                    <div class="row">
+                                        <span class="month">05</span>
+                                        <span class="detail">사옥 이전</span>
+                                    </div>
+                                    <div class="row">
+                                        <span class="month">03</span>
+                                        <span class="detail">김ㅇㅇ사장 취임</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="left">
+                                    <span class="year">1996</span>
+                                </div>
+                                <div class="right">
+                                    <div class="row line">
+                                        <span class="month">05</span>
+                                        <span class="detail">사옥 이전</span>
+                                    </div>
+                                    <div class="row line">
+                                        <span class="month">03</span>
+                                        <span class="detail">김ㅇㅇ사장 취임</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="left">
+                                    <span class="year">1993</span>
+                                </div>
+                                <div class="right">
+                                    <div class="row line">
+                                        <span class="month">05</span>
+                                        <span class="detail">사옥 이전</span>
+                                    </div>
+                                    <div class="row line">
+                                        <span class="month">03</span>
+                                        <span class="detail">김ㅇㅇ사장 취임</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="left">
+                                    <span class="year">1992</span>
+                                </div>
+                                <div class="right">
+                                    <div class="row line">
+                                        <span class="month">05</span>
+                                        <span class="detail">사옥 이전</span>
+                                    </div>
+                                    <div class="row line">
+                                        <span class="month">03</span>
+                                        <span class="detail">김ㅇㅇ사장 취임</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="left">
+                                    <span class="year">1991</span>
+                                </div>
+                                <div class="right">
+                                    <div class="row line">
+                                        <span class="month">05</span>
+                                        <span class="detail">사옥 이전</span>
+                                    </div>
+                                    <div class="row line">
+                                        <span class="month">03</span>
+                                        <span class="detail">김ㅇㅇ사장 취임</span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>                
+            </div>
+        </section>
+        <!-- //연혁 -->
+    </div>
     <!-- footer -->
     <footer class="footer">
         <div class="footer-top">
@@ -65,5 +320,22 @@
     </footer>
     <!-- //footer -->
     <a href="#" class="btn-top">TOP</a>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/contents.js"></script>
+    <script>
+        // $(document).ready(function(){    
+        //     $('ul.tabs li').click(function(){
+        //         var tab_id = $(this).attr('data-tab');
+
+        //         $('ul.tabs li').removeClass('current');
+        //         $('.tab-content').removeClass('current');
+
+        //         $(this).addClass('current');
+        //         $("#"+tab_id).addClass('current');
+        //     })
+        // })
+    </script>
 </body>
 </html>
